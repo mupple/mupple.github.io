@@ -10,6 +10,29 @@
 
 <body>
   <h1>mupple</h1>
+  <iframe style="width:100%;height:100%" src="https://d3f1lh8uvyk1dq.cloudfront.net/iframe-snippet.html"></iframe>
+
+
+  <script src="https://d3f1lh8uvyk1dq.cloudfront.net/lex-web-ui-loader.min.js"></script>
+  <script>
+    var loaderOpts = {
+      baseUrl: 'https://d3f1lh8uvyk1dq.cloudfront.net/',
+      shouldLoadMinDeps: true
+    };
+    var loader = new ChatBotUiLoader.IframeLoader(loaderOpts);
+    var chatbotUiConfig = {
+      /* Example of setting session attributes on parent page
+      lex: {
+        sessionAttributes: {
+          userAgent: navigator.userAgent,
+          QNAClientFilter: ''
+        }
+      }
+      */
+    };
+    loader.load(chatbotUiConfig)
+      .catch(function (error) { console.error(error); });
+  </script>
 </body>
 
 </html>
