@@ -11,29 +11,30 @@
 <body>
   <h1>mupple</h1>
   <iframe style="width:40vw;height:40vh"
-    src="https://d3f1lh8uvyk1dq.cloudfront.net/index.html#/?lexWebUiEmbed=true"></iframe>
-
-
-  <script src="https://d3f1lh8uvyk1dq.cloudfront.net/lex-web-ui-loader.min.js"></script>
-  <script>
-    var loaderOpts = {
-      baseUrl: 'https://d3f1lh8uvyk1dq.cloudfront.net/',
-      shouldLoadMinDeps: true
-    };
-    var loader = new ChatBotUiLoader.IframeLoader(loaderOpts);
-    var chatbotUiConfig = {
-      /* Example of setting session attributes on parent page
-      lex: {
-        sessionAttributes: {
-          userAgent: navigator.userAgent,
-          QNAClientFilter: ''
-        }
-      }
-      */
-    };
-    loader.load(chatbotUiConfig)
-      .catch(function (error) { console.error(error); });
-  </script>
+    src="https://d2dsao6u9np4f9.cloudfront.net/index.html#/?lexWebUiEmbed=true"></iframe>
+  
+  
+  
+<script src="https://d2dsao6u9np4f9.cloudfront.net/lex-web-ui-loader.min.js"></script>
+<script>
+  var loaderOpts = {
+    baseUrl: 'https://d2dsao6u9np4f9.cloudfront.net/',
+    shouldLoadMinDeps: true
+  };
+  var loader = new ChatBotUiLoader.IframeLoader(loaderOpts);
+  var chatbotUiConfig = {
+          /* Example of setting session attributes on parent page
+          lex: {
+            sessionAttributes: {
+              userAgent: navigator.userAgent,
+              QNAClientFilter: ''
+            }
+          }
+          */
+        };
+  loader.load(chatbotUiConfig)
+    .catch(function (error) { console.error(error); });
+</script>
 </body>
 
 </html>
